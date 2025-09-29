@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html, body{
+  scroll-behavior: smooth;
+  @apply bg-[#F2F2F2];
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.animate-gradient {
+  animation: gradient 6s ease infinite;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar {
+  height: 8px;   /* tinggi scrollbar horizontal */
+  width: 8px;    /* lebar scrollbar vertical */
 }
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* abu muda (track) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0371c8; /* biru sesuai Lawson */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #025ca3; /* biru lebih gelap saat hover */
+}
+
+
