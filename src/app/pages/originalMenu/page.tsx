@@ -31,7 +31,7 @@ export default function Menu() {
     }, [menu.length])
 
     return (
-        <div className="w-full bg-gradient-to-r from-[#50589C] via-[#91ADC8] to-[#7A73D1] bg-[length:400%_400%] animate-gradient text-white h-120 py-10">
+        <div className="w-full bg-gradient-to-r from-[#5459AC] via-[#83C0C1] to-[#725CAD] bg-[length:400%_400%] animate-gradient text-white h-120 py-10">
             <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
                 {/* Bagian kiri */}
@@ -45,25 +45,25 @@ export default function Menu() {
 
                 {/* Bagian kanan */}
                 <div className="md:w-1/2 flex justify-end relative">
-  {/* Kotak gambar utama */}
-  <div className="relative w-[800px] h-[400px] ml-20 z-10">
-    <Image
-      src={menu[index].img}
-      alt={menu[index].title}
-      fill
-      className="object-cover shadow-lg transition-opacity duration-700 rounded-lg"
-    />
-  </div>
+                    {/* Kotak gambar utama */}
+                    <div className="relative w-[800px] h-[400px] ml-20 z-10">
+                        <Image
+                            src={menu[index].img}
+                            alt={menu[index].title}
+                            fill
+                            className="object-cover shadow-lg transition-opacity duration-700 rounded-lg"
+                        />
+                    </div>
 
-  {/* Gambar tutul */}
-  <Image
-    src="/tutul.png"
-    alt="extra"
-    width={200}
-    height={120}
-    className="absolute bottom-[-30px] right-[20px] opacity-70 z-0"
-  />
-</div>
+                    {/* Gambar tutul */}
+                    <Image
+                        src="/tutul.png"
+                        alt="extra"
+                        width={200}
+                        height={120}
+                        className="absolute bottom-[-30px] right-[20px] opacity-70 z-0"
+                    />
+                </div>
 
 
             </div>

@@ -8,12 +8,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-rubik)", "sans-serif"], // default ke Rubik
+        rubik: ["var(--font-rubik)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
     },
   },
   plugins: [],
 }
+
 
 module.exports = {
   theme: {

@@ -11,7 +11,7 @@ export default function AppBar() {
         width={27}
         height={27}
       />
-      <span className="text-lg font-normal">EN</span>
+      <span className="text-lg font-normal font-rubik">EN</span>
     </button>
   </div>
 </header>
