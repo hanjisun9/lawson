@@ -23,7 +23,6 @@ export default function Video() {
           loop
           muted
           playsInline
-          controls
         >
           <source src="/video.mp4" type="video/mp4" />
           Browser kamu tidak mendukung video.
