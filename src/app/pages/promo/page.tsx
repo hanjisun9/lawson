@@ -31,6 +31,7 @@ export default function Promo() {
                 <div className="flex gap-6">
                     {promos.map((promo, index) => (
                         <div
+                        key={index}
                             className="min-w-[300px] max-w-[300px] flex flex-col transition-all duration-300 hover:scale-[1.02]"
                         >
                             {/* Bagian gambar (tanpa background putih) */}
